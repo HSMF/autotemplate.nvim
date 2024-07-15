@@ -7,8 +7,10 @@ Using lazy.nvim
 
 ```lua
 {
-    "HSMF/autotemplate.nvim"
-}
+  "HSMF/autotemplate.nvim",
+  opts = {},
+  dependencies = { "nvim-treesitter/nvim-treesitter" }
+},
 ```
 
 Add the following to `after/ftplugin/javascript.lua`
