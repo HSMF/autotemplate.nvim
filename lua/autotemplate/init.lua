@@ -94,6 +94,9 @@ function M.autotemplate(language, trigger)
     local row = pos[1] - 1
     local col = pos[2]
     local offset = M.yas(language)
+    if offset == nil then
+        offset = 0
+    end
     vim.api.nvim_buf_set_text(0, row, col + offset, row, col + offset, { trigger })
     vim.api.nvim_win_set_cursor(0, { row + 1, col + 1 + offset })
 end
