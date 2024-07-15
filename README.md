@@ -1,5 +1,8 @@
 # autotemplate
 
+Automatically turn a javascript string into a template string when $ is pressed
+
+
 ## Installation
 
 
